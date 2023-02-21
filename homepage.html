@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIT campus recruitment</title>
+    <link rel="website icon" type="png" href="logo_symbiosis.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="homepage.css" />
+</head>
+
+<body>
+    <!--======================================================= NAME,LOGO ===============================================================-->
+    <section class="py-3 bg-stone-800 w-41 h-21 space-x-5 mx-0 flex item-stretch">
+        <div class="py-4  pl-14 w-41 h-29"><img src="logo_symbiosis.png" class="mx-5 w-20 float-left" /></div>
+        <div class="py-8 text-5xl text-red-600 font-bold my-15 pl-7">SYMBIOSIS INSTITUTE OF TECHNOLOGY
+            <div class="pt-1 text-sm text-zinc-400 font-serif">Campus Recruitment System</div>
+        </div>
+
+    </section>
+    <!--======================================================= NAV-BAR ===============================================================-->
+    <section>
+        <nav class="px-2 bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+            <div class="container flex flex-wrap items-center justify-between mx-70">
+                <button data-collapse-toggle="navbar-dropdown" type="button"
+                    class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-dropdown" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+                    <ul
+                        class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent"
+                                aria-current="page">
+                                Home</a>
+                        </li>
+                        <li>
+                            <a href="https://siu.edu.in/about-us.php"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                                About</a>
+                        </li>
+                        <li>
+                            <a href="FAQs.html"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                                FAQ</a>
+                        </li>
+
+                        <li>
+                            <a href="companies.html"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                                Companies</a>
+                        </li>
+                        <li>
+                            <a href="jobs.html"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                                All Jobs</a>
+                        </li>
+                        <li>
+                            <a href="https://sitnagpur.edu.in/contactus"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                                Contact</a>
+                        </li>
+                        <li>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+                                Register / Login <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdownNavbar"
+                                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600 relative z-[100]">
+                                <ul class="py-1 text-sm text-gray-700 dark:text-gray-400"
+                                    aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="main.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                            Student</a>
+                                    </li>
+                                    <li>
+                                        <a href="company.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                            Company</a>
+                                    </li>
+                                </ul>
+                                <!-- <div class="py-1">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">
+                                Sign out</a>
+                          </div> -->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+
+    </section>
+    <!--======================================================= CAROUSEL ===============================================================-->
+    <section>
+        <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+        <div class="page-header min-vh-25 relative mx-2 my-2 rounded-md border-radius-xl align-items-center"
+            style="background-image: url(https://www.creative-tim.com/assets/campaigns/bf-22/header-aef5f654291c090100bab30eee15754cd8f4f05f046d7bfc97e6a4ce5090e209.jpg)">
+            <div class="container p-2 mx-auto">
+                <div id="default-carousel" class="relative" data-carousel="static">
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-66">
+                        <!-- Item 1 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <span
+                                class="absolute text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl dark:text-gray-800">First
+                                Slide</span>
+                            <img src="ad1.png"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="...">
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="ad2.png"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="...">
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="ad3.png"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="...">
+                        </div>
+                    </div>
+                    <!-- Slider indicators -->
+                    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1"
+                            data-carousel-slide-to="0"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                            data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                            data-carousel-slide-to="2"></button>
+                    </div>
+                    <!-- Slider controls -->
+                    <button type="button"
+                        class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                        data-carousel-prev>
+                        <span
+                            class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button"
+                        class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                        data-carousel-next>
+                        <span
+                            class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--======================================================= SUBMIT RESUME ===============================================================-->
+    <section>
+        <div
+            class="mx-2 p-6 pb-2 my-2 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex static relative">
+            <div class="px-auto mx-6">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">SUBMIT RESUME NOW!
+                    </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Post your CV and get matched with suitable
+                    job openings.</p>
+            </div>
+
+            <div class="mr-2 absolute right-20">
+                <a href="submitR.html"
+                    class="transition ease-in-out delay-50 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 inline-flex items-center px-6 py-4 text-lm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 
+                    focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Submit
+                    <svg aria-hidden="true" class="w-6 h-4 ml-2 mr-1" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--======================================================= BOX [PDF] ===============================================================-->
+
+    <section>
+
+    </section>
+
+    <!--======================================================= CALENDER ===============================================================-->
+
+    <section>
+        <div class="mx-2 my-4 w-50 bg-sky-300 rounded-t-3xl">
+            <div class="text-gray-700">
+
+                <!-- Component Start -->
+                <div class="flex flex-grow w-55 h-screen overflow-auto">
+
+                    <div class="flex flex-col flex-grow">
+                        <div class="flex items-center mt-4">
+                            <div class="flex ml-6">
+                                <button>
+                                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 19l-7-7 7-7" />
+                                    </svg>
+                                </button>
+                                <button>
+                                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <h2 class="ml-2 text-xl font-bold leading-none">September, 2020</h2>
+                        </div>
+                        <div class="grid grid-cols-7 mt-4">
+                            <div class="pl-1 text-sm">Mon</div>
+                            <div class="pl-1 text-sm">Tue</div>
+                            <div class="pl-1 text-sm">Wed</div>
+                            <div class="pl-1 text-sm">Thu</div>
+                            <div class="pl-1 text-sm">Fri</div>
+                            <div class="pl-1 text-sm">Sat</div>
+                            <div class="pl-1 text-sm">Sun</div>
+                        </div>
+                        <div class="grid flex-grow w-full h-auto grid-cols-7 grid-rows-5 gap-px pt-px mt-1 bg-gray-200">
+                            <div></div>
+                            <div class="relative flex flex-col bg-white group">
+                                <span class="mx-2 my-1 text-xs font-bold">1 September</span>
+                                <div class="flex flex-col px-1 py-1 overflow-auto">
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 border border-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">8:30am</span>
+                                        <span class="ml-2 font-medium leading-none truncate">An unconfirmed event</span>
+                                    </button>
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">2:15pm</span>
+                                        <span class="ml-2 font-medium leading-none truncate">A confirmed event</span>
+                                    </button>
+                                </div>
+                                <button
+                                    class="absolute bottom-0 right-0 flex items-center justify-center hidden w-6 h-6 mb-2 mr-2 text-white bg-gray-400 rounded group-hover:flex hover:bg-gray-500">
+                                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 plus">
+                                        <path fill-rule="evenodd"
+                                            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="relative flex flex-col bg-white group">
+                                <span class="mx-2 my-1 text-xs font-bold">2</span>
+                                <div class="flex flex-col px-1 py-1 overflow-auto">
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 border border-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">8:30am</span>
+                                        <span class="ml-2 font-medium leading-none truncate">An unconfirmed event</span>
+                                    </button>
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">2:15pm</span>
+                                        <span class="ml-2 font-medium leading-none truncate">A confirmed event</span>
+                                    </button>
+                                </div>
+                                <button
+                                    class="absolute bottom-0 right-0 flex items-center justify-center hidden w-6 h-6 mb-2 mr-2 text-white bg-gray-400 rounded group-hover:flex hover:bg-gray-500">
+                                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 plus">
+                                        <path fill-rule="evenodd"
+                                            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="relative flex flex-col bg-white group">
+                                <span class="mx-2 my-1 text-xs font-bold">3</span>
+                                <div class="flex flex-col px-1 py-1 overflow-auto">
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 border border-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">8:30am</span>
+                                        <span class="ml-2 font-medium leading-none truncate">An unconfirmed event</span>
+                                    </button>
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">2:15pm</span>
+                                        <span class="ml-2 font-medium leading-none truncate">A confirmed event</span>
+                                    </button>
+                                </div>
+                                <button
+                                    class="absolute bottom-0 right-0 flex items-center justify-center hidden w-6 h-6 mb-2 mr-2 text-white bg-gray-400 rounded group-hover:flex hover:bg-gray-500">
+                                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 plus">
+                                        <path fill-rule="evenodd"
+                                            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="relative flex flex-col bg-white group">
+                                <span class="mx-2 my-1 text-xs font-bold">4</span>
+                                <div class="flex flex-col px-1 py-1 overflow-auto">
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 border border-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">8:30am</span>
+                                        <span class="ml-2 font-medium leading-none truncate">An unconfirmed event</span>
+                                    </button>
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">2:15pm</span>
+                                        <span class="ml-2 font-medium leading-none truncate">A confirmed event</span>
+                                    </button>
+                                </div>
+                                <button
+                                    class="absolute bottom-0 right-0 flex items-center justify-center hidden w-6 h-6 mb-2 mr-2 text-white bg-gray-400 rounded group-hover:flex hover:bg-gray-500">
+                                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 plus">
+                                        <path fill-rule="evenodd"
+                                            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="relative flex flex-col bg-white group">
+                                <span class="mx-2 my-1 text-xs font-bold">5</span>
+                                <div class="flex flex-col px-1 py-1 overflow-auto">
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 border border-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">8:30am</span>
+                                        <span class="ml-2 font-medium leading-none truncate">An unconfirmed event</span>
+                                    </button>
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">2:15pm</span>
+                                        <span class="ml-2 font-medium leading-none truncate">A confirmed event</span>
+                                    </button>
+                                </div>
+                                <button
+                                    class="absolute bottom-0 right-0 flex items-center justify-center hidden w-6 h-6 mb-2 mr-2 text-white bg-gray-400 rounded group-hover:flex hover:bg-gray-500">
+                                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 plus">
+                                        <path fill-rule="evenodd"
+                                            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="relative flex flex-col bg-white group">
+                                <span class="mx-2 my-1 text-xs font-bold">6</span>
+                                <div class="flex flex-col px-1 py-1 overflow-auto">
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 border border-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">8:30am</span>
+                                        <span class="ml-2 font-medium leading-none truncate">An unconfirmed event</span>
+                                    </button>
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">2:15pm</span>
+                                        <span class="ml-2 font-medium leading-none truncate">A confirmed event</span>
+                                    </button>
+                                </div>
+                                <button
+                                    class="absolute bottom-0 right-0 flex items-center justify-center hidden w-6 h-6 mb-2 mr-2 text-white bg-gray-400 rounded group-hover:flex hover:bg-gray-500">
+                                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 plus">
+                                        <path fill-rule="evenodd"
+                                            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="relative flex flex-col bg-white group">
+                                <span class="mx-2 my-1 text-xs font-bold">7</span>
+                                <div class="flex flex-col px-1 py-1 overflow-auto">
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 border border-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">8:30am</span>
+                                        <span class="ml-2 font-medium leading-none truncate">An unconfirmed event</span>
+                                    </button>
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">2:15pm</span>
+                                        <span class="ml-2 font-medium leading-none truncate">A confirmed event</span>
+                                    </button>
+                                </div>
+                                <button
+                                    class="absolute bottom-0 right-0 flex items-center justify-center hidden w-6 h-6 mb-2 mr-2 text-white bg-gray-400 rounded group-hover:flex hover:bg-gray-500">
+                                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 plus">
+                                        <path fill-rule="evenodd"
+                                            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="relative flex flex-col bg-white group">
+                                <span class="mx-2 my-1 text-xs font-bold">8</span>
+                                <div class="flex flex-col px-1 py-1 overflow-auto">
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 border border-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">8:30am</span>
+                                        <span class="ml-2 font-medium leading-none truncate">An unconfirmed event</span>
+                                    </button>
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">2:15pm</span>
+                                        <span class="ml-2 font-medium leading-none truncate">A confirmed event</span>
+                                    </button>
+                                </div>
+                                <button
+                                    class="absolute bottom-0 right-0 flex items-center justify-center hidden w-6 h-6 mb-2 mr-2 text-white bg-gray-400 rounded group-hover:flex hover:bg-gray-500">
+                                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 plus">
+                                        <path fill-rule="evenodd"
+                                            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="relative flex flex-col bg-white group">
+                                <span class="mx-2 my-1 text-xs font-bold">9</span>
+                                <div class="flex flex-col px-1 py-1 overflow-auto">
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 border border-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">8:30am</span>
+                                        <span class="ml-2 font-medium leading-none truncate">An unconfirmed event</span>
+                                    </button>
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">2:15pm</span>
+                                        <span class="ml-2 font-medium leading-none truncate">A confirmed event</span>
+                                    </button>
+                                </div>
+                                <button
+                                    class="absolute bottom-0 right-0 flex items-center justify-center hidden w-6 h-6 mb-2 mr-2 text-white bg-gray-400 rounded group-hover:flex hover:bg-gray-500">
+                                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 plus">
+                                        <path fill-rule="evenodd"
+                                            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="relative flex flex-col bg-white group">
+                                <span class="mx-2 my-1 text-xs font-bold">10</span>
+                                <div class="flex flex-col px-1 py-1 overflow-auto">
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 border border-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">8:30am</span>
+                                        <span class="ml-2 font-medium leading-none truncate">An unconfirmed event</span>
+                                    </button>
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">2:15pm</span>
+                                        <span class="ml-2 font-medium leading-none truncate">A confirmed event</span>
+                                    </button>
+                                </div>
+                                <button
+                                    class="absolute bottom-0 right-0 flex items-center justify-center hidden w-6 h-6 mb-2 mr-2 text-white bg-gray-400 rounded group-hover:flex hover:bg-gray-500">
+                                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 plus">
+                                        <path fill-rule="evenodd"
+                                            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="relative flex flex-col bg-white group">
+                                <span class="mx-2 my-1 text-xs font-bold">11</span>
+                                <div class="flex flex-col px-1 py-1 overflow-auto">
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 border border-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">8:30am</span>
+                                        <span class="ml-2 font-medium leading-none truncate">An unconfirmed event</span>
+                                    </button>
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">2:15pm</span>
+                                        <span class="ml-2 font-medium leading-none truncate">A confirmed event</span>
+                                    </button>
+                                </div>
+                                <button
+                                    class="absolute bottom-0 right-0 flex items-center justify-center hidden w-6 h-6 mb-2 mr-2 text-white bg-gray-400 rounded group-hover:flex hover:bg-gray-500">
+                                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 plus">
+                                        <path fill-rule="evenodd"
+                                            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="relative flex flex-col bg-white group">
+                                <span class="mx-2 my-1 text-xs font-bold">12</span>
+                                <div class="flex flex-col px-1 py-1 overflow-auto">
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 border border-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">8:30am</span>
+                                        <span class="ml-2 font-medium leading-none truncate">An unconfirmed event</span>
+                                    </button>
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">2:15pm</span>
+                                        <span class="ml-2 font-medium leading-none truncate">A confirmed event</span>
+                                    </button>
+                                </div>
+                                <button
+                                    class="absolute bottom-0 right-0 flex items-center justify-center hidden w-6 h-6 mb-2 mr-2 text-white bg-gray-400 rounded group-hover:flex hover:bg-gray-500">
+                                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 plus">
+                                        <path fill-rule="evenodd"
+                                            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="relative flex flex-col bg-white group">
+                                <span class="mx-2 my-1 text-xs font-bold">13</span>
+                                <div class="flex flex-col px-1 py-1 overflow-auto">
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 border border-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">8:30am</span>
+                                        <span class="ml-2 font-medium leading-none truncate">An unconfirmed event</span>
+                                    </button>
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">2:15pm</span>
+                                        <span class="ml-2 font-medium leading-none truncate">A confirmed event</span>
+                                    </button>
+                                </div>
+                                <button
+                                    class="absolute bottom-0 right-0 flex items-center justify-center hidden w-6 h-6 mb-2 mr-2 text-white bg-gray-400 rounded group-hover:flex hover:bg-gray-500">
+                                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 plus">
+                                        <path fill-rule="evenodd"
+                                            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="relative flex flex-col bg-white group">
+                                <span class="mx-2 my-1 text-xs font-bold">14</span>
+                                <div class="flex flex-col px-1 py-1 overflow-auto">
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 border border-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">8:30am</span>
+                                        <span class="ml-2 font-medium leading-none truncate">An unconfirmed event</span>
+                                    </button>
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">2:15pm</span>
+                                        <span class="ml-2 font-medium leading-none truncate">A confirmed event</span>
+                                    </button>
+                                </div>
+                                <button
+                                    class="absolute bottom-0 right-0 flex items-center justify-center hidden w-6 h-6 mb-2 mr-2 text-white bg-gray-400 rounded group-hover:flex hover:bg-gray-500">
+                                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 plus">
+                                        <path fill-rule="evenodd"
+                                            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="relative flex flex-col bg-white group">
+                                <span class="mx-2 my-1 text-xs font-bold">15</span>
+                                <div class="flex flex-col px-1 py-1 overflow-auto">
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 border border-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">8:30am</span>
+                                        <span class="ml-2 font-medium leading-none truncate">An unconfirmed event</span>
+                                    </button>
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">2:15pm</span>
+                                        <span class="ml-2 font-medium leading-none truncate">A confirmed event</span>
+                                    </button>
+                                </div>
+                                <button
+                                    class="absolute bottom-0 right-0 flex items-center justify-center hidden w-6 h-6 mb-2 mr-2 text-white bg-gray-400 rounded group-hover:flex hover:bg-gray-500">
+                                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 plus">
+                                        <path fill-rule="evenodd"
+                                            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="relative flex flex-col bg-white group">
+                                <span class="mx-2 my-1 text-xs font-bold">16</span>
+                                <div class="flex flex-col px-1 py-1 overflow-auto">
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 border border-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">8:30am</span>
+                                        <span class="ml-2 font-medium leading-none truncate">An unconfirmed event</span>
+                                    </button>
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">2:15pm</span>
+                                        <span class="ml-2 font-medium leading-none truncate">A confirmed event</span>
+                                    </button>
+                                </div>
+                                <button
+                                    class="absolute bottom-0 right-0 flex items-center justify-center hidden w-6 h-6 mb-2 mr-2 text-white bg-gray-400 rounded group-hover:flex hover:bg-gray-500">
+                                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 plus">
+                                        <path fill-rule="evenodd"
+                                            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="relative flex flex-col bg-white group">
+                                <span class="mx-2 my-1 text-xs font-bold">17</span>
+                                <div class="flex flex-col px-1 py-1 overflow-auto">
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 border border-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">8:30am</span>
+                                        <span class="ml-2 font-medium leading-none truncate">An unconfirmed event</span>
+                                    </button>
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">2:15pm</span>
+                                        <span class="ml-2 font-medium leading-none truncate">A confirmed event</span>
+                                    </button>
+                                </div>
+                                <button
+                                    class="absolute bottom-0 right-0 flex items-center justify-center hidden w-6 h-6 mb-2 mr-2 text-white bg-gray-400 rounded group-hover:flex hover:bg-gray-500">
+                                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 plus">
+                                        <path fill-rule="evenodd"
+                                            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="relative flex flex-col bg-white group">
+                                <span class="mx-2 my-1 text-xs font-bold">18</span>
+                                <div class="flex flex-col px-1 py-1 overflow-auto">
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 border border-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">8:30am</span>
+                                        <span class="ml-2 font-medium leading-none truncate">An unconfirmed event</span>
+                                    </button>
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">2:15pm</span>
+                                        <span class="ml-2 font-medium leading-none truncate">A confirmed event</span>
+                                    </button>
+                                </div>
+                                <button
+                                    class="absolute bottom-0 right-0 flex items-center justify-center hidden w-6 h-6 mb-2 mr-2 text-white bg-gray-400 rounded group-hover:flex hover:bg-gray-500">
+                                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 plus">
+                                        <path fill-rule="evenodd"
+                                            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="relative flex flex-col bg-white group">
+                                <span class="mx-2 my-1 text-xs font-bold">19</span>
+                                <div class="flex flex-col px-1 py-1 overflow-auto">
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 border border-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">8:30am</span>
+                                        <span class="ml-2 font-medium leading-none truncate">An unconfirmed event</span>
+                                    </button>
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">2:15pm</span>
+                                        <span class="ml-2 font-medium leading-none truncate">A confirmed event</span>
+                                    </button>
+                                </div>
+                                <button
+                                    class="absolute bottom-0 right-0 flex items-center justify-center hidden w-6 h-6 mb-2 mr-2 text-white bg-gray-400 rounded group-hover:flex hover:bg-gray-500">
+                                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 plus">
+                                        <path fill-rule="evenodd"
+                                            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="relative flex flex-col bg-white group">
+                                <span class="mx-2 my-1 text-xs font-bold">20</span>
+                                <div class="flex flex-col px-1 py-1 overflow-auto">
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 border border-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">8:30am</span>
+                                        <span class="ml-2 font-medium leading-none truncate">An unconfirmed event</span>
+                                    </button>
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">2:15pm</span>
+                                        <span class="ml-2 font-medium leading-none truncate">A confirmed event</span>
+                                    </button>
+                                </div>
+                                <button
+                                    class="absolute bottom-0 right-0 flex items-center justify-center hidden w-6 h-6 mb-2 mr-2 text-white bg-gray-400 rounded group-hover:flex hover:bg-gray-500">
+                                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 plus">
+                                        <path fill-rule="evenodd"
+                                            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="relative flex flex-col bg-white group">
+                                <span class="mx-2 my-1 text-xs font-bold">21</span>
+                                <div class="flex flex-col px-1 py-1 overflow-auto">
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 border border-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">8:30am</span>
+                                        <span class="ml-2 font-medium leading-none truncate">An unconfirmed event</span>
+                                    </button>
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">2:15pm</span>
+                                        <span class="ml-2 font-medium leading-none truncate">A confirmed event</span>
+                                    </button>
+                                </div>
+                                <button
+                                    class="absolute bottom-0 right-0 flex items-center justify-center hidden w-6 h-6 mb-2 mr-2 text-white bg-gray-400 rounded group-hover:flex hover:bg-gray-500">
+                                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 plus">
+                                        <path fill-rule="evenodd"
+                                            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="relative flex flex-col bg-white group">
+                                <span class="mx-2 my-1 text-xs font-bold">22</span>
+                                <div class="flex flex-col px-1 py-1 overflow-auto">
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 border border-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">8:30am</span>
+                                        <span class="ml-2 font-medium leading-none truncate">An unconfirmed event</span>
+                                    </button>
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">2:15pm</span>
+                                        <span class="ml-2 font-medium leading-none truncate">A confirmed event</span>
+                                    </button>
+                                </div>
+                                <button
+                                    class="absolute bottom-0 right-0 flex items-center justify-center hidden w-6 h-6 mb-2 mr-2 text-white bg-gray-400 rounded group-hover:flex hover:bg-gray-500">
+                                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 plus">
+                                        <path fill-rule="evenodd"
+                                            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="relative flex flex-col bg-white group">
+                                <span class="mx-2 my-1 text-xs font-bold">23</span>
+                                <div class="flex flex-col px-1 py-1 overflow-auto">
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 border border-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">8:30am</span>
+                                        <span class="ml-2 font-medium leading-none truncate">An unconfirmed event</span>
+                                    </button>
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">2:15pm</span>
+                                        <span class="ml-2 font-medium leading-none truncate">A confirmed event</span>
+                                    </button>
+                                </div>
+                                <button
+                                    class="absolute bottom-0 right-0 flex items-center justify-center hidden w-6 h-6 mb-2 mr-2 text-white bg-gray-400 rounded group-hover:flex hover:bg-gray-500">
+                                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 plus">
+                                        <path fill-rule="evenodd"
+                                            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="relative flex flex-col bg-white group">
+                                <span class="mx-2 my-1 text-xs font-bold">24</span>
+                                <div class="flex flex-col px-1 py-1 overflow-auto">
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 border border-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">8:30am</span>
+                                        <span class="ml-2 font-medium leading-none truncate">An unconfirmed event</span>
+                                    </button>
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">2:15pm</span>
+                                        <span class="ml-2 font-medium leading-none truncate">A confirmed event</span>
+                                    </button>
+                                </div>
+                                <button
+                                    class="absolute bottom-0 right-0 flex items-center justify-center hidden w-6 h-6 mb-2 mr-2 text-white bg-gray-400 rounded group-hover:flex hover:bg-gray-500">
+                                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 plus">
+                                        <path fill-rule="evenodd"
+                                            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="relative flex flex-col bg-white group">
+                                <span class="mx-2 my-1 text-xs font-bold">25</span>
+                                <div class="flex flex-col px-1 py-1 overflow-auto">
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 border border-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">8:30am</span>
+                                        <span class="ml-2 font-medium leading-none truncate">An unconfirmed event</span>
+                                    </button>
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">2:15pm</span>
+                                        <span class="ml-2 font-medium leading-none truncate">A confirmed event</span>
+                                    </button>
+                                </div>
+                                <button
+                                    class="absolute bottom-0 right-0 flex items-center justify-center hidden w-6 h-6 mb-2 mr-2 text-white bg-gray-400 rounded group-hover:flex hover:bg-gray-500">
+                                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 plus">
+                                        <path fill-rule="evenodd"
+                                            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="relative flex flex-col bg-white group">
+                                <span class="mx-2 my-1 text-xs font-bold">26</span>
+                                <div class="flex flex-col px-1 py-1 overflow-auto">
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 border border-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">8:30am</span>
+                                        <span class="ml-2 font-medium leading-none truncate">An unconfirmed event</span>
+                                    </button>
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">2:15pm</span>
+                                        <span class="ml-2 font-medium leading-none truncate">A confirmed event</span>
+                                    </button>
+                                </div>
+                                <button
+                                    class="absolute bottom-0 right-0 flex items-center justify-center hidden w-6 h-6 mb-2 mr-2 text-white bg-gray-400 rounded group-hover:flex hover:bg-gray-500">
+                                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 plus">
+                                        <path fill-rule="evenodd"
+                                            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="relative flex flex-col bg-white group">
+                                <span class="mx-2 my-1 text-xs font-bold">27</span>
+                                <div class="flex flex-col px-1 py-1 overflow-auto">
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 border border-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">8:30am</span>
+                                        <span class="ml-2 font-medium leading-none truncate">An unconfirmed event</span>
+                                    </button>
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">2:15pm</span>
+                                        <span class="ml-2 font-medium leading-none truncate">A confirmed event</span>
+                                    </button>
+                                </div>
+                                <button
+                                    class="absolute bottom-0 right-0 flex items-center justify-center hidden w-6 h-6 mb-2 mr-2 text-white bg-gray-400 rounded group-hover:flex hover:bg-gray-500">
+                                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 plus">
+                                        <path fill-rule="evenodd"
+                                            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="relative flex flex-col bg-white group">
+                                <span class="mx-2 my-1 text-xs font-bold">28</span>
+                                <div class="flex flex-col px-1 py-1 overflow-auto">
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 border border-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">8:30am</span>
+                                        <span class="ml-2 font-medium leading-none truncate">An unconfirmed event</span>
+                                    </button>
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">2:15pm</span>
+                                        <span class="ml-2 font-medium leading-none truncate">A confirmed event</span>
+                                    </button>
+                                </div>
+                                <button
+                                    class="absolute bottom-0 right-0 flex items-center justify-center hidden w-6 h-6 mb-2 mr-2 text-white bg-gray-400 rounded group-hover:flex hover:bg-gray-500">
+                                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 plus">
+                                        <path fill-rule="evenodd"
+                                            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="relative flex flex-col bg-white group">
+                                <span class="mx-2 my-1 text-xs font-bold">29</span>
+                                <div class="flex flex-col px-1 py-1 overflow-auto">
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 border border-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">8:30am</span>
+                                        <span class="ml-2 font-medium leading-none truncate">An unconfirmed event</span>
+                                    </button>
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">2:15pm</span>
+                                        <span class="ml-2 font-medium leading-none truncate">A confirmed event</span>
+                                    </button>
+                                </div>
+                                <button
+                                    class="absolute bottom-0 right-0 flex items-center justify-center hidden w-6 h-6 mb-2 mr-2 text-white bg-gray-400 rounded group-hover:flex hover:bg-gray-500">
+                                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 plus">
+                                        <path fill-rule="evenodd"
+                                            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="relative flex flex-col bg-white group">
+                                <span class="mx-2 my-1 text-xs font-bold">30</span>
+                                <div class="flex flex-col px-1 py-1 overflow-auto">
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 border border-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">8:30am</span>
+                                        <span class="ml-2 font-medium leading-none truncate">An unconfirmed event</span>
+                                    </button>
+                                    <button class="flex items-center flex-shrink-0 h-5 px-1 text-xs hover:bg-gray-200">
+                                        <span class="flex-shrink-0 w-2 h-2 bg-gray-500 rounded-full"></span>
+                                        <span class="ml-2 font-light leading-none">2:15pm</span>
+                                        <span class="ml-2 font-medium leading-none truncate">A confirmed event</span>
+                                    </button>
+                                </div>
+                                <button
+                                    class="absolute bottom-0 right-0 flex items-center justify-center hidden w-6 h-6 mb-2 mr-2 text-white bg-gray-400 rounded group-hover:flex hover:bg-gray-500">
+                                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 plus">
+                                        <path fill-rule="evenodd"
+                                            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Component End  -->
+
+            </div>
+
+            <a class="fixed animate-bounce flex shadow-7xl shadow-indigo-500/50 items-center justify-center h-9 pr-2 pl-1 bg-blue-100 rounded-xl bottom-0 right-0 mr-4 mb-4 shadow-lg text-blue-100 hover:bg-blue-200"
+                href="chatbot.html" target="_top">
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/4616/4616655.png" class="h-10 w-10">
+                </div>
+                <!-- <span class="text-sm ml-1 leading-none">@chat</span> -->
+            </a>
+        </div>
+    </section>
+    <!--======================================================= DIRECTOR'S PHOTO & MESSAGE ===============================================================-->
+    <section class="mx-2 flex">
+        <section id="inner-wrapper">
+            <div class="container-fluid contentblock">
+                <div class="row">
+                    <div class="col-sm-9 innercontent">
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <ul class="breadcrumb ">
+                                        <li class="active text-2xl font-bold my-5" style="color:#e0391f">
+                                            -------------------------------------------------------The
+                                            Dean------------------------------------------------------------</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div>
+                                    <div
+                                        class="col-sm-4 flex space-x-3 mx-2 p-6 my-2 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 text-white">
+                                        <div class="thumbnail">
+                                            <img src="https://sitnagpur.edu.in/assets/images/Kotecha.jpg"
+                                                class="img-responsive h-90 w-60 ml-20">
+                                            <!--<h4><strong>Dr K Kotecha <br><span class="small">Director and Dean</span></strong></h4>-->
+                                        </div>
+                                        <div>
+                                            <div class="col-sm-8 px-20 py-20 leading-10">
+                                                <!--  <p><strong>Ketan Kotecha, PhD ( IIT Mumbai)</strong></p>
+                                       <p><strong>Professor, Computer Science & Engineering, <br>
+                                       Head, Symbiosis Centre for Applied Artificial Intelligence (SCAAI)
+                                       Dean,  Faculty of Engineering,  Symbiosis International ( Deemed University)<br> 
+                                       Director, Symbiosis Institute of Technology<br>
+                                       Chief Executive Officer (CEO), Symbiosis Centre for Entrepreneurship and Innovation <br>
+                                       TEDx speaker 2015 | Author – Introduction to Critical Thinking ( Macmillan)<br>
+                                       Recipient of Erasmus + faculty mobility grants from European Union</strong></p><br> -->
+                                                <p>Dr.Ketan Kotecha,<strong> PhD ( IIT Bombay )</strong></p>
+                                                <p><a href="mailto:deanfoengg@siu.edu.in" target="_blank"
+                                                        class="hover:text-blue-300"><i class="fa fa-envelope"
+                                                            style="margin-right:0.5rem;"></i>deanfoengg@siu.edu.in</a>
+                                                </p>
+                                                <!--<p> <a href="mailto:drketankoetcha@gmail.com" target="_blank">drketankoetcha@gmail.com</a></p>-->
+                                                <!-- <p>
+                                       <a href="mailto:director@sitpune.edu.in" target="_blank">director@sitpune.edu.in</a> <br>
+                                       <a href="mailto:head@scaai.siu.edu.in" target="_blank"> head@scaai.siu.edu.in</a>
+                                       <a href="mailto: head@scaai.edu.in" target="_blank">head@scaai.edu.in</a>
+                                    </p> -->
+                                                <hr>
+                                                <p>Professor, Computer Science &amp; Engineering <br>
+                                                    Head, Symbiosis Centre for Applied Artificial Intelligence <a
+                                                        href="http://scaai.edu.in/" target="_blank">(SCAAI)</a><br>
+                                                    Dean, Faculty of Engineering, Symbiosis International (Deemed
+                                                    University)<br>
+                                                    <!-- Director, Symbiosis Institute of Technology<br>
+                                       TEDx speaker 2015 | Author – Introduction to Critical Thinking (Macmillan) -->
+                                                </p>
+                                                <!--<p>Professor, Computer Science & Engineering <br>-->
+                                                <!--   Head, Symbiosis Centre for Applied Artificial Intelligence <a href="http://scaai.edu.in/" target="_blank">(SCAAI)</a><br>-->
+                                                <!--   Dean, Faculty of Engineering,  Symbiosis International (Deemed University)<br> -->
+                                                <!--   Director, Symbiosis Institute of Technology<br>-->
+                                                <!--   Chief Executive Officer (CEO), Symbiosis Centre for Entrepreneurship and Innovation <br>-->
+                                                <!--   TEDx speaker 2015 | Author – Introduction to Critical Thinking (Macmillan)-->
+                                                <!--   </p>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 mx-10 mt-5 ">
+                                    <strong style="color: #e0391f;">Recipient of</strong>
+                                    <ul class="p-4 list-disc pt-0">
+                                        <li>Erasmus + faculty mobility grants from European Union</li>
+                                        <li>LEAP (Leadership for Academicians Programme) grant from MHRD Govt of India
+                                            in
+                                            collaboration with IIT Kharagpur and University of Cambridge UK, November
+                                            2019-Jan 2020.
+                                        </li>
+                                        <li>DUO- INDIA Professor fellowship under Asia - Europe Meeting (ASEM-DUO) with
+                                            Brunel University, UK, 2020</li>
+                                        <li>Two Research grants worth INR 1.66 crores under Promotion of Academic and
+                                            Research Collaboration(SPARC) scheme by MHRD, Govt of India, in
+                                            collaboration with Arizona State University USA and University of
+                                            Queensland, Australia.</li>
+                                        <li>Invite and sponsorship from Embassy of the United States of America to
+                                            participate in US-India Higher Education Collaboration Workshop to be held
+                                            in Washington D.C on April 2020 for establishing international partnerships
+                                            for research and academic collaborations with India and USA.</li>
+                                        <li>Invited as Editor for the prestigious Q1 Scopus journal PeerJ Computer
+                                            Science considering his expertise in the domain of Artificial
+                                            Intelligence.&nbsp;<a href="https://peerj.com/DrKetanKotecha/"
+                                                target="_blank">https://peerj.com/DrKetanKotecha/</a></li>
+                                    </ul>
+                                    <div class="space-y-5">
+                                        <!--   <p>    An advocate and practitioner of emotional intelligence in workplaces, Dr Ketan Kotecha is at the helm of the administrative, academic and entrepreneurship affairs of the Symbiosis International (Deemed University). An exceptional academic leader, he has a firm grip on the steering of the institution towards desired vision and mission. His 25 years of extraordinary career saw him serving in the finest of the engineering colleges in various higher technical education leadership positions.</p> -->
+                                        <p>An advocate and practitioner of emotional intelligence in workplaces, Dr
+                                            Ketan Kotecha is at the helm of the administrative, academic and
+                                            entrepreneurship affairs of the Symbiosis International (Deemed University).
+                                            His 25 years of extraordinary career saw him serving in the finest of the
+                                            engineering colleges in various higher technical education leadership
+                                            positions.</p>
+                                        <!-- <p> An avid researcher, he has various prestigious transnational projects under him. He is recipient of the projects worth INR 166 lacs on AI for Credibility Analysis of Information and Expandable AI for Health care in collaboration with the Arizona state university and the University of Queensland under Scheme for Promotion of Academic and Research Collaboration(SPARC) by MHRD, GoI respectively. He is also a team member for the nationwide initiative on "AI and deep learning Skilling and Research named Leadingindia.ai initiative sponsored by Royal Academy of Engineering, UK under Newton Bhabha Fund.   </p> -->
+                                        <p>An avid researcher, he has various prestigious transnational projects under
+                                            him. He is recipient of the projects worth INR 1.6 crores on AI for
+                                            Credibility Analysis of Information and Explainable AI for Health care in
+                                            collaboration with the Arizona State University, USA and the University of
+                                            Queensland, Australia under Scheme for Promotion of Academic and Research
+                                            Collaboration(SPARC) by MHRD, GoI respectively. He is also a team member for
+                                            the nationwide initiative on "AI and Deep Learning Skill" and Research named
+                                            Leadingindia.ai initiative sponsored by Royal Academy of Engineering, UK
+                                            under Newton Bhabha Fund.</p>
+                                        <!--  <p> A researcher - teacher of Deep learning, his interest areas are Artificial Intelligence, Computer Algorithms, Machine Learning, Deep Learning Higher Order Thinking Skills, Critical Thinking and Ethics & Values.   </p>  -->
+                                        <p>A researcher - teacher of Deep Learning, his interest areas are Artificial
+                                            Intelligence, Computer Algorithms, Machine Learning, Deep Learning Higher
+                                            Order Thinking Skills, Critical Thinking and Ethics &amp; Values.</p>
+                                        <p> His research work can also be seen at <a
+                                                href="https://scholar.google.co.in/citations?user=oNiE0gMAAAAJ&amp;hl=en"
+                                                target="_blank" class="hover:text-sky-300 font-bold">
+                                                https://scholar.google.co.in/citations?user=oNiE0gMAAAAJ&amp;hl=en .</a>
+                                        </p>
+                                        <!-- <p> He has more than 100 papers published /presented at international conferences around the world, to his credit and 3 patents filed. He is Guide to doctoral students working on the various field of Computer Engineering and especially in Machine Learning for PhD/MTech Degrees. His insightful articles on varying topics are also published in news dailies; CSI magazine; AIU University newsletter etc.   </p> -->
+                                        <p>He has more than 100 papers published /presented at international conferences
+                                            around the world, to his credit and 3 patents filed. He is Guide to doctoral
+                                            students working on the various field of Computer Engineering and especially
+                                            in Machine Learning for PhD/MTech Degrees. His insightful articles on
+                                            varying topics are also published in news dailies; CSI magazine; AIU
+                                            University newsletter etc.</p>
+                                        <!--  <p> He was keynote speaker for events such as ACMA Technology Summit 2019, Pune; international conference on “Flexible Learning Pathways: Asia-Europe Conference on Lifelong Learning and the 2030 Agenda for Sustainable Development”,  Hanoi, Vietnam; Artificial Intelligence & Data Analytics in Decision Making" at the 14th FICCI Higher Education Summit 2018. He was also a member of FICCI higher education delegation to S Korea in May 2019. He has also delivered a talk on Research directions for Artificial intelligence at various forums including at IIT Bombay.   </p>  -->
+                                        <p>He was keynote speaker for events (recent ones) such as ACMA Technology
+                                            Summit 2019, Pune; international conference on “Flexible Learning Pathways:
+                                            Asia-Europe Conference on Lifelong Learning and the 2030 Agenda for
+                                            Sustainable Development”, Hanoi, Vietnam; Artificial Intelligence &amp; Data
+                                            Analytics in Decision Making" at the 14th FICCI Higher Education Summit
+                                            2018. He was also a member of FICCI higher education delegation to S Korea
+                                            in May 2019. He has also delivered a talk on Research directions for
+                                            Artificial intelligence at various forums including at IIT Bombay.</p>
+                                        <!-- <p> Dr Kotecha was founding Provost of Gujarat's largest private university- Parul University. He was Director – Academic Development and Research Cell, Nirma University, Ahmedabad, where he also served as the Dean and Director of the Institute of Technology, Nirma University.   </p>  -->
+                                        <p>Dr Kotecha was founding Provost of Gujarat's largest private university-
+                                            Parul University. He was Director – Academic Development and Research Cell,
+                                            Nirma University, Ahmedabad, where he also served as the Dean and Director
+                                            of the Institute of Technology, Nirma University.</p>
+                                        <!--    <p> He was Governing Council Member of the USA based Global Engineering Dean’s Council – India Chapter and is also a member of National Advisory Council for Confederation of Indian Industry’s (CII) Engineering and Management Curriculum Restructuring Task Force. He is the member of Governing Council of various universities and member of Academic Council at few Universities. He was a Member of the Technical Advisory Committee of BRTS, Ahmedabad and is also a member of Metro–Link Express for Gandhinagar.   </p>  -->
+                                        <p>He was Governing Council Member of the USA based Global Engineering Dean’s
+                                            Council – India Chapter and is also a member of National Advisory Council
+                                            for Confederation of Indian Industry’s (CII) Engineering and Management
+                                            Curriculum Restructuring Task Force. He is the member of Governing Council
+                                            of various universities and member of Academic Council at few Universities.
+                                            He was a Member of the Technical Advisory Committee of BRTS, Ahmedabad and
+                                            is also a member of Metro–Link Express for Gandhinagar.</p>
+                                        <!-- <p> Dr Kotecha is also an independent director of Gujarat Informatics nominated by Government of Gujarat.   </p>  -->
+                                        <p> Dr Kotecha is also an independent director of Gujarat Informatics nominated
+                                            by Government of Gujarat.</p>
+                                        <!-- <p> A recipient of Erasmus + faculty mobility grant from European Union, Dr Kotecha was invited by Wroclaw University of Science and Technology and Poznan University of technology, Poland for delivering sessions on Machine learning. Earlier he was visiting an expert to University of Pretoria, S. Africa. He was also invited and visited in various countries like USA, Canada, Singapore, Hong Kong, S. Africa, Spain, Poland, Germany, Cz Republic, Switzerland, Argentina and South Korea.   </p> -->
+                                        <p>A recipient of Erasmus + faculty mobility grant from European Union, Dr
+                                            Kotecha was invited by Wroclaw University of Science and Technology and
+                                            Poznan University of technology, Poland for delivering sessions on Machine
+                                            learning. He was a visiting expert to University of Pretoria, S. Africa. He
+                                            was also invited and visited various countries like USA, Canada, Singapore,
+                                            Hong Kong, S. Africa, Spain, Poland, Germany, Cz Republic, Switzerland,
+                                            Argentina, China, Vietnam, and South Korea.</p>
+                                        <!--  <p> Dr Kotecha  is pioneer in Education Technology, and believes in drastic and needed curriculum reforms and innovative teaching-learning practices as call of the hour. A voracious reader, he is passionate about travelling and indulging in good food.   </p>  -->
+                                        <p>Dr Kotecha is pioneer in Education Technology, believes in drastic curriculum
+                                            reforms and innovative teaching-learning practices. He is also a voracious
+                                            reader and is passionate about travelling and indulging in good food.</p>
+                                        <!--   <p>An advocate and practitioner of emotional intelligence in workplaces, Dr Ketan Kotecha is at the helm of the administrative, academic and entrepreneurship affairs of the Symbiosis International (Deemed University). An exceptional academic leader, he has a firm grip on the steering of the institution towards desired vision and mission. His 25 years of extraordinary career saw him serving in the finest of the engineering colleges in various higher technical education leadership positions.</p>
+                                 <p>An avid researcher, He has various prestigious transnational projects under him. He is recipient of the projects worth INR 166 lacs on AI for Credibility Analysis of Information and Expandable AI for Health care in collaboration with the Arizona state university and the University of Queensland under Scheme for Promotion of Academic and Research Collaboration(SPARC) by MHRD, GoI respectively. He is also a team member for the nationwide initiative on "AI and deep learning Skilling and Research named Leadingindia.ai initiative sponsored by Royal Academy of Engineering, UK under Newton Bhabha Fund.</p>
+                                 
+                                 <p>A researcher - teacher of Deep learning, his interest areas are Artificial Intelligence, Computer Algorithms, Machine Learning, Deep Learning Higher Order Thinking Skills, Critical Thinking and Ethics & Values.His research work can also be seen at
+                                 
+                                 <a href="https://scholar.google.co.in/citations?user=oNiE0gMAAAAJ&hl=en" target="_blank">https://scholar.google.co.in/citations?user=oNiE0gMAAAAJ&hl=en</a>
+                                 He has more than 100 papers published /presented at international conferences around the world, to his credit and 3 patents filed. He is Guide to doctoral students working on the various field of Computer Engineering and especially in Machine Learning for PhD/MTech Degrees. His insightful articles on varying topics are also published in news dailies; CSI magazine; AIU University newsletter etc.</p>
+                                 
+                                 <p>He was keynote speaker for events such as ACMA Technology Summit 2019, Pune; international conference on “Flexible Learning Pathways: Asia-Europe Conference on Lifelong Learning and the 2030 Agenda for Sustainable Development”, Hanoi, Vietnam; Artificial Intelligence & Data Analytics in Decision Making" at the 14th FICCI Higher Education Summit 2018.</p>
+                                 <p>Dr Kotecha was founding Provost of Gujarat's largest private university- Parul University. He was Director – Academic Development and Research Cell, Nirma University, Ahmedabad, where he also served as the Dean and Director of the Institute of Technology, Nirma University.
+                                 He was Governing Council Member of the USA based Global Engineering Dean’s Council – India Chapter and is also a member of National Advisory Council for Confederation of Indian Industry’s (CII) Engineering and Management Curriculum Restructuring Task Force. He is the member of Governing Council of various universities and member of Academic Council at few Universities. He was a Member of the Technical Advisory Committee of BRTS, Ahmedabad and is also a member of Metro–Link Express for Gandhinagar.</p>
+                                 
+                                 <p>Dr Kotecha is also an independent director of Gujarat Informatics nominated by Government of Gujarat.</p>
+                                 <p>A recipient of Erasmus + faculty mobility grant from European Union, Dr Kotecha was invited by Wroclaw University of Science and Technology and Poznan University of technology, Poland for delivering sessions on Machine learning. Earlier he was visiting an expert to University of Pretoria, S. Africa. He was also invited and visited in various countries like USA, Canada, Singapore, Hong Kong, S. Africa, Poland, Germany, Cz Republic, Switzerland and Argentina.</p>
+                                 <p>Dr Kotecha is pioneer in Education Technology, and believes in drastic and needed curriculum reforms and innovative teaching-learning practices as call of the hour. A voracious reader, he is passionate about travelling and indulging in good food.</p>-->
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 p-8">
+                                    <h3><strong><i><u>Online Articles:</u></i></strong></h3>
+                                    <a class="hover:text-red-600"
+                                        href="http://bweducation.businessworld.in/article/How-Can-An-Institute-Help-Build-Startups-Through-Their-Pedagogy-/17-06-2021-393443/"
+                                        target="_blank">1. How can An Institute Help Build Startups Through Their
+                                        Pedagogy</a> <br>
+                                    <br><a class="hover:text-red-600"
+                                        href="https://digitallearning.eletsonline.com/2019/01/what-careers-to-choose-after-geoinformatics/"
+                                        target="_blank">2. What careers to choose after Geoinformatics?</a> <br>
+                                    <br>
+                                    <a class="hover:text-red-600"
+                                        href="https://www.educationworld.in/6-ways-in-which-certification-courses-add-an-edge-to-your-resume/"
+                                        target="_blank">3. 6 ways in which certification courses add an edge to your
+                                        resume. </a> <br>
+                                    <br>
+                                    <a class="hover:text-red-600"
+                                        href="https://www.financialexpress.com/jobs/certificate-course-in-ai-and-machine-learning-the-right-way-to-add-value-to-your-resume/1490569/"
+                                        target="_blank">4. Certificate course in AI and Machine learning – The right way
+                                        to add value to your resume. </a> <br>
+                                    <br>
+                                    <a class="hover:text-red-600"
+                                        href="https://www.hindustantimes.com/education/how-to-prepare-for-jee-2019-and-other-upcoming-engineering-entrance-exams/story-UldwOBuRB8D74Q2tPcrmhK.html"
+                                        target="_blank">5. How to prepare for JEE 2019 and other upcoming engineering
+                                        entrance exams.</a> <br>
+                                    <br>
+                                    <a class="hover:text-red-600"
+                                        href="https://chetchat.in/life-in-an-engineering-college/">6. Life in an
+                                        Engineering College. </a> <br>
+                                    <br>
+                                    <a class="hover:text-red-600"
+                                        href="https://timesofindia.indiatimes.com/city/pune/symbiosis-technology-instt-teachers-get-rs-1-66cr-funding/articleshow/68695488.cms"
+                                        target="_blank">7. Symbiosis Technology Institute teachers get Rs. 1.66 crore
+                                        funding.</a> <br>
+                                    <br>
+                                </div>
+                                <div class="col-sm-12 p-8 pt-4">
+                                    <h3><strong><i><u>Newspaper Articles:</u></i></strong></h3>
+                                    <a href="https://www.deccanherald.com/supplements/dh-education/how-to-practice-your-ikigai-897500.html"
+                                        target="_blank">1. How to practice your Ikigai?</a><br><br>
+                                    <a href="https://www.hindustantimes.com/pune-news/principal-speak-ketan-kotecha-opens-up-about-plans-for-symbiosis-institute-of-technology/story-FErQfPWdWb4WFhmliIh6cL.html"
+                                        target="_blank">2. Principal speak: Dr.Ketan Kotecha opens up about plans for
+                                        Symbiosis Institute of Technology.</a> <br><br>
+                                    <a href="assets/images/news1.jpg" target="_blank">
+                                        <!-- 2. After completing Class XII, students are often confused whether to follow their passion or should industry trends make for their career choice. 
+                                    DR KETAN KOTECHA shares tips to simplify decision-making -->
+                                        3. Take the right decision after class XII
+                                    </a>
+                                    <br>
+                                    <br>
+                                    <a href="https://www.thehindu.com/education/how-mechanical-engineers-can-drive-digital-transformation/article33219111.ece"
+                                        target="_blank">4. Article In The Hindu On 3D printers and digital twins.</a>
+                                    <br>
+                                    <br>
+                                </div>
+                                <div class="col-sm-12 p-8">
+                                    <h3><strong><i><u>Magazine Article:</u></i></strong></h3>
+                                    <a href="https://www.siliconindia.com/digital-magazine/nursing-colleges-special-april-2019/#page=18"
+                                        target="_blank">digital-magazine.</a> <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+
+    </section>
+
+    <!--======================================================= CONTACT FOOTER ===============================================================-->
+
+    <section>
+
+
+        <footer class="p-4 bg-white sm:p-6 dark:bg-gray-900">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0">
+                    <a href="https://sitnagpur.edu.in/" class="flex items-center">
+                        <img src="logo_symbiosis.png" class="mx-2 h-12" alt="symbiosis Logo" />
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">SYMBIOSIS
+                            INSTITUTE OF TECHNOLOGY (SIT)</span>
+                    </a>
+                </div>
+                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">About Institute
+                        </h2>
+                        <ul class="text-gray-600 dark:text-gray-400">
+                            <li class="mb-4">
+                                <a href="https://www.sitpune.edu.in/career" class="hover:underline">career</a>
+                            </li>
+                            <li>
+                                <a href="https://sitnagpur.edu.in/btech-computer-science-engineering"
+                                    class="hover:underline">specialisation</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                        <ul class="text-gray-600 dark:text-gray-400">
+                            <li class="mb-4">
+                                <a href="https://github.com/login" class="hover:underline ">Github</a>
+                            </li>
+                            <li>
+                                <a href="https://discord.com/" class="hover:underline">Discord</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                        <ul class="text-gray-600 dark:text-gray-400">
+                            <li class="mb-4">
+                                <a href="https://sitnagpur.edu.in/privacy-policy" class="hover:underline">Privacy
+                                    Policy</a>
+                            </li>
+                            <li>
+                                <a href="https://siu.edu.in/student-affairs.php#antiRaggingPolicy"
+                                    class="hover:underline">UGC Rules and Regulations</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">Copyright © 2022 . <a
+                        href="https://sitnagpur.edu.in/" class="hover:underline">Symbiosis Institute of Technology </a>.
+                    All Rights Reserved.
+                </span>
+                <div class="flex mt-4 mr-40 l-20 space-x-6 sm:justify-center sm:mt-0">
+                    <a href="https://www.facebook.com/campaign/landing.php?campaign_id=14884913640&extra_1=s%7Cc%7C589460569900%7Cb%7Cfb%20login%27%7C&placement=&creative=589460569900&keyword=fb%20login%27&partner_id=googlesem&extra_2=campaignid%3D14884913640%26adgroupid%3D128696221912%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-370844460174%26loc_physical_ms%3D9301971%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQiA7bucBhCeARIsAIOwr-_7bQ5t2Zz7m25nCUI5T1vTH4CbZUMrFjq2d9vlapWYTwhskCiePVQaAphnEALw_wcB"
+                        class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">Facebook page</span>
+                    </a>
+                    <a href="https://www.instagram.com/"
+                        class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">Instagram page</span>
+                    </a>
+                    <a href="https://twitter.com/i/flow/login"
+                        class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                        </svg>
+                        <span class="sr-only">Twitter page</span>
+                    </a>
+                    <a href="https://github.com/login" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">GitHub account</span>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+
+</html>

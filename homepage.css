@@ -1,0 +1,68 @@
+/* body{
+    background-color: rgb(255, 255, 255);
+    background-image: url("IMG-20220514-WA0004.jpg");
+    background-size: cover;
+    background-position: center;
+    background-position-y: 30px;
+    background-repeat: no-repeat;
+} */
+
+/* .redbar{
+    background-color: rgb(255, 0, 0);
+    padding:5px;
+    margin-top:-10px;
+    margin-left:-10px;
+    margin-right:-10px;
+    box-shadow: 0px 5px 25px black;
+} */
+
+.menu{
+    display:grid;
+    grid-auto-flow: column;
+    margin-right:-10px;
+    margin-left:-10px; 
+    box-shadow: 0px 5px 10px black;
+}
+
+.card{
+    background-color: rgb(0, 0, 0);
+    padding: 0px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    position: relative;
+    display: inline-block;
+}
+
+.card h1{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    text-shadow: 0px 0px 2px black;
+}
+
+.card-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.card-dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.card:hover{
+    background-color: #ffffff;
+    transition-duration: 1s;
+}
+
+.card:hover h1{
+    color: black;
+    transition-duration: 0ms;
+}
